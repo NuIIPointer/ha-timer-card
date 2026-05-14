@@ -1,18 +1,18 @@
 {
   "domain": "timer_card",
   "name": "Timer Card",
-  "version": "0.1.11",
-  "config_flow": true,
-  "documentation": "https://github.com/NuIIPointer/ha-timer-card",
-  "issue_tracker": "https://github.com/NuIIPointer/ha-timer-card/issues",
   "codeowners": [
     "@NuIIPointer"
   ],
-  "iot_class": "calculated",
-  "integration_type": "service",
-  "requirements": [],
+  "config_flow": true,
   "dependencies": [
     "http",
     "frontend"
-  ]
+  ],
+  "documentation": "https://github.com/NuIIPointer/ha-timer-card",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/NuIIPointer/ha-timer-card/issues",
+  "requirements": [],
+  "version": "0.1.11"
 }
