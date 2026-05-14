@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Timer Card",
+        "description": "Ottaa käyttöön Timer Card -palvelut, anturin ja Lovelace-kortin."
+      }
+    },
+    "abort": {
+      "already_configured": "Timer Card on jo asennettu."
+    }
+  }
+}

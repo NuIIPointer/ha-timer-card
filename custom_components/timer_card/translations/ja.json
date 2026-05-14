@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Timer Card",
+        "description": "Timer Card のサービス、センサー、Lovelace カードを有効化します。"
+      }
+    },
+    "abort": {
+      "already_configured": "Timer Card は既に設定されています。"
+    }
+  }
+}

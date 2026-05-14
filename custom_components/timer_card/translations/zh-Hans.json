@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Timer Card",
+        "description": "启用 Timer Card 服务、传感器以及 Lovelace 卡片。"
+      }
+    },
+    "abort": {
+      "already_configured": "Timer Card 已配置。"
+    }
+  }
+}

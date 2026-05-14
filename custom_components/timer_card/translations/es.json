@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Timer Card",
+        "description": "Habilita los servicios, el sensor y la tarjeta Lovelace de Timer Card."
+      }
+    },
+    "abort": {
+      "already_configured": "Timer Card ya está configurado."
+    }
+  }
+}

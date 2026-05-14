@@ -1,0 +1,93 @@
+create:
+  name: Create timer
+  description: Create a new timer that sets an entity to a target value when it expires.
+  fields:
+    card_id:
+      name: Card ID
+      description: Identifier of the card instance that owns this timer.
+      required: true
+      example: "kitchen-lights"
+      selector:
+        text:
+    entity_id:
+      name: Entity
+      description: The entity the timer will set when it expires.
+      required: true
+      example: "light.kitchen"
+      selector:
+        entity:
+    target_value:
+      name: Target value
+      description: Value to set on the entity. Type depends on the domain (e.g. "on"/"off", a number, an option name, or a dict for light attributes).
+      required: true
+      example: "off"
+      selector:
+        object:
+    duration:
+      name: Duration (seconds)
+      description: How many seconds from now the timer should fire.
+      required: true
+      example: 600
+      selector:
+        number:
+          min: 1
+          max: 2678400
+          mode: box
+    label:
+      name: Label
+      description: Optional label shown in the card.
+      required: false
+      example: "Bath off"
+      selector:
+        text:
+
+delete:
+  name: Delete timer
+  description: Delete (cancel) a running timer by id.
+  fields:
+    timer_id:
+      name: Timer ID
+      description: The id of the timer to delete.
+      required: true
+      selector:
+        text:
+
+update:
+  name: Update timer
+  description: Update the remaining time of a running timer. Provide either an absolute new duration or a delta (positive to extend, negative to shorten).
+  fields:
+    timer_id:
+      name: Timer ID
+      description: The id of the timer to update.
+      required: true
+      selector:
+        text:
+    duration:
+      name: New duration (seconds)
+      description: New absolute remaining duration from now, in seconds. Mutually exclusive with `delta`.
+      required: false
+      selector:
+        number:
+          min: 1
+          max: 2678400
+          mode: box
+    delta:
+      name: Delta (seconds)
+      description: Seconds to add to (or subtract from, if negative) the current remaining duration. Mutually exclusive with `duration`.
+      required: false
+      selector:
+        number:
+          min: -2678400
+          max: 2678400
+          mode: box
+
+clear_finished:
+  name: Clear finished timers
+  description: Clear the list of finished timers, optionally only for a specific card.
+  fields:
+    card_id:
+      name: Card ID
+      description: Optional; only clear finished timers belonging to this card.
+      required: false
+      selector:
+        text:

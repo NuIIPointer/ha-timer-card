@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Timer Card",
+        "description": "Engedélyezi a Timer Card szolgáltatásokat, a szenzort és a Lovelace kártyát."
+      }
+    },
+    "abort": {
+      "already_configured": "A Timer Card már be van állítva."
+    }
+  }
+}
