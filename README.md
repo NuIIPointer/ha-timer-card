@@ -18,11 +18,11 @@ A modern Lovelace card that lets you create one-shot timers from your dashboard.
 
 | Empty card on a dashboard | Active timer with countdown | Edit running timer |
 | --- | --- | --- |
-| ![Empty card](docs/screenshot-empty.png) | ![Active timer](docs/screenshot-active.png) | ![Edit dialog](docs/screenshot-edit.png) |
+| ![Empty card](docs/screenshot-empty.jpg) | ![Active timer](docs/screenshot-running-timer.jpg) | ![Edit dialog](docs/screenshot-adjust-duration.jpg) |
 
 | Entity-picker dialog | Target-value picker (type-aware) | Visual editor with favourites |
 | --- | --- | --- |
-| ![Entity picker](docs/screenshot-entity.png) | ![Value picker](docs/screenshot-value.png) | ![Editor](docs/screenshot-editor.png) |
+| ![Entity picker](docs/screenshot-create-timer-entity-select.jpg) | ![Value picker (Light)](docs/screenshot-create-timer-target-light-value-select.jpg) ![Value picker (Thermostat)](docs/screenshot-create-timer-target-thermostat-value-select.jpg) | ![Editor](docs/screenshot-create-lovelace-card.jpg) |
 
 ---
 
