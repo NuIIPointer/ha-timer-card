@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.12] - 2026-05-15
+
+### Added
+- Ship brand icon and logo inside the integration (`custom_components/timer_card/brand/`) — leverages HA 2026.3's local brand images feature, no separate brands PR needed
+- README: HACS one-click install buttons (open repository, add integration, manage integration)
+
+### Fixed
+- `manifest.json` key order to satisfy hassfest validator (domain, name, then alphabetical)
+
 ## [0.1.11] - 2026-05-14
 
 ### Added
