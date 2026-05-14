@@ -10,7 +10,6 @@
   ],
   "iot_class": "calculated",
   "integration_type": "service",
-  "min_ha_version": "2024.7.0",
   "requirements": [],
   "dependencies": [
     "http",
